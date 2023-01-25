@@ -13,7 +13,9 @@ function App() {
   const nameList=[{f:"Lionel",l:"Messi"},{f:"Kylian",l:"Mbappe"},{f:"Neymar",l:"Jr."}]
   return (
     <div className="App">
-      <Greet name="string" num={20} isLoggedIn={true}/>
+      <Greet name="string" isLoggedIn={false}/>
+      <Greet name="string" isLoggedIn={true}/>
+      <Greet name="string" num={20} isLoggedIn={false}/>
       <Person name={name1}/>
       <PersonList nameList={nameList}/>
       <Loading value='In Progress'></Loading>

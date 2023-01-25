@@ -1,8 +1,10 @@
 type GreetTypes ={
     name:string,
-    num:number,
+    num?:number,
     isLoggedIn:boolean
 }
-export function Greet(props: GreetTypes){
-    return <div><h2>{props.isLoggedIn?"Welcome":props.name+props.num}</h2></div>
+export const Greet =(props: GreetTypes)=>{
+    const {num=0}=props
+    // console.log(num)
+    return <div><h2>{props.isLoggedIn?"Welcome":props.name+num}</h2></div>
 }
