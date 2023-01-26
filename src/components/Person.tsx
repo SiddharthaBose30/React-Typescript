@@ -1,7 +1,5 @@
-type GreetTypes ={
-    name:{FName:string,
-     Lname:string}
-}
-export function Person(props: GreetTypes){
-    return <div><h2>Welcome {props.name.FName} {props.name.Lname}</h2></div>
+
+import { personTypes } from "./Person.types"
+export function Person(props: personTypes){
+    return <div><h2>Welcome {props.name.fname} {props.name.fname}</h2></div>
 }

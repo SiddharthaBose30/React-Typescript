@@ -12,13 +12,13 @@ import { Event } from './components/Event';
 import { Input } from './components/input';
 import { Style } from './components/StyleProps';
 function App() {
-  const name1={FName:"Lionel",Lname:"Messi"}
-  const nameList=[{f:"Lionel",l:"Messi"},{f:"Kylian",l:"Mbappe"},{f:"Neymar",l:"Jr."}]
+  const name1={fname:"Lionel",lname:"Messi"}
+  const nameList=[{fname:"Lionel",lname:"Messi"},{fname:"Kylian",lname:"Mbappe"},{fname:"Neymar",lname:"Jr."}]
   return (
     <div className="App">
       <Greet name="string" isLoggedIn={false}/>
       <Greet name="string" isLoggedIn={true}/>
-      <Greet name="string" num={20} isLoggedIn={false}/>
+      <Greet name="LIONEL" num={20} isLoggedIn={false}/>
       <Person name={name1}/>
       <PersonList nameList={nameList}/>
       <Loading value='In Progress'></Loading>
