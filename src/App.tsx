@@ -11,6 +11,7 @@ import { Props3 } from './components/Props3';
 import { Event } from './components/Event';
 import { Input } from './components/input';
 import { Style } from './components/StyleProps';
+import { IsLoggedIn } from './states/IsLoggedIn';
 function App() {
   const name1={fname:"Lionel",lname:"Messi"}
   const nameList=[{fname:"Lionel",lname:"Messi"},{fname:"Kylian",lname:"Mbappe"},{fname:"Neymar",lname:"Jr."}]
@@ -27,6 +28,7 @@ function App() {
       <Event handleclick={(event,id)=>{console.log("Clicked",event,3*id)}}/>
       <Input  handleChange={(event)=>{console.log(event)}}/>
       <Style style={{border:'1px solid black', color:'red',background:'black',padding:'1rem', margin:'20px'}}/>
+      <IsLoggedIn/>
     </div>
   );
 }
